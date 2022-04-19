@@ -6,10 +6,6 @@
   font-family: Poppins, sans-serif;
 }
 body {
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background: #161623;
 }
 body::before {
@@ -35,11 +31,14 @@ body::after {
 .container {
   position: relative;
   display: flex;
+  width: 100%;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
   flex-wrap: wrap;
   z-index: 1;
+  margin-inline: auto;
 }
 .container .card {
   position: relative;
@@ -84,7 +83,7 @@ body::after {
 .container .card .content p {
   font-size: 1em;
   color: #fff;
-  font-weight: 300px;
+  font-weight: 300;
 }
 .container .card .content a {
   position: relative;
@@ -98,3 +97,9 @@ body::after {
   font-weight: 900;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
+/*@media screen and (max-width: 758px) {*/
+/*  .container {*/
+/*    flex-direction: column;*/
+/*  }*/
+/*}*/
